@@ -1,0 +1,162 @@
+<!DOCTYPE html> <!-- 声明文档类型为 HTML5 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>个人主页</title> <!-- 网页标题 -->
+   <!-- 内嵌的css -->
+  <style>
+    /* 全局样式初始化 */
+    * {
+      margin: 0; /* 清除外边距 */
+      padding: 0; /* 清除内边距 */
+      box-sizing: border-box; /* 盒子模型包含内边距和边框 */
+    }
+    /* 在body标签内设置整个页面的背景和布局 */
+    body {
+      /* 设置背景图片 */
+      background: url(https://w.wallhaven.wpcoder.cn/full/qr/wallhaven-qrdd6l.jpg) no-repeat center center fixed; 
+      background-size: cover; /* 背景图铺满屏幕 */
+      display: flex; /* 使用 Flex 弹性布局 */
+      justify-content: center; /* 使元素水平居中 */
+      align-items: center; /* 垂直居中 */
+      min-height: 100vh; /* 设置最小高度为视口高度 */
+      font-family: 'Arial', sans-serif; /* 设置字体的格式 */
+    }
+    /* 主容器样式 */
+    .main {
+      display: flex; 
+      flex-direction: row; /* 水平排列 */
+      width: 90%; /* 宽度为屏幕的 90% */
+      max-width: 2000px; /* 最大宽度限制为 2000px */
+      height: 900px; /* 高度固定为 900px */
+      background: rgba(255, 255, 255, 0.1); /* 半透明背景 */
+      backdrop-filter: blur(10px); /* 毛玻璃效果 */
+      border-radius: 20px; /* 圆角边框 */
+      overflow: hidden; /* 隐藏超出内容，这是旁边的滑动栏 */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+    }
+    /* 个人简介 */
+    .text1 {
+      width: 30%; /* 宽度占主容器的30% */
+      background-color: rgba(255, 255, 255, 0.8); /* 背景半透明白色 */
+      padding: 20px; /* 内边距 */
+      display: flex; /* Flex 弹性布局 */
+      flex-direction: column; /* 垂直排列子元素 */
+      align-items: center; /* 子元素水平居中 */
+      justify-content: flex-start; /* 顶部对齐 */
+    }
+    /* 头像 */
+    .text1 img {
+      width: 180px; /* 头像宽度 */
+      height: 180px; /* 头像高度 */
+      border-radius: 50%; /* 让其成为圆形头像 */
+      object-fit: cover; /* 裁剪图片以填满容器 */
+      margin-bottom: 15px; /* 下边距 */
+    }
+    /* 简介列表 */
+    .text1 ul {
+      list-style: none; /* 去掉列表符号 */
+      width: 100%; /* 宽度为父容器的100% */
+      padding: 0; /* 去掉内边距 */
+      margin-bottom: 15px; /* 下边距 */
+    }
+    /* 每一项的样式 */
+    .text1 ul li {
+      margin: 8px 0; /* 每项上下间距 */
+      font-size: 16px; /* 字体大小 */
+    }
+    /* 个性签名 */
+    .text1 p {
+      font-style: italic; /* 斜体 */
+      margin-bottom: 15px; /* 下边距 */
+      text-align: center; /* 居中对齐 */
+    }
+    /* 外部链接按钮容器样式 */
+    .text1 .box {
+      display: flex; /* Flex 布局 */
+      flex-direction: column; /* 垂直排列 */
+      gap: 10px; /* 每个间距为10px */
+    }
+    /* 每个链接按钮的样式 */
+    .text1 .box a {
+      color: #333; /* 字体颜色 */
+      text-decoration: none; /* 去掉下划线 */
+      background: #e0f7fa; /* 背景颜色 */
+      padding: 8px 12px; /* 内边距 */
+      border-radius: 8px; /* 圆角边框 */
+      text-align: center; /* 居中对齐文字 */
+      transition: background 0.3s; /* 背景颜色变化过渡 */
+    }
+    /* 右侧内容 */
+    .text2 {
+      flex: 1; /* 占据剩余空间 */
+      padding: 30px; /* 内边距 */
+      color: white; /* 字体颜色为白色 */
+      overflow: scroll; /* 出现滚动条 */
+    }
+    /* 标题 */
+    .text2 h1 {
+      font-size: 36px; /* 字体大小 */
+      margin-bottom: 20px; /* 下边距 */
+    }
+  </style>
+</head>
+<body>
+  <div class="main"> <!-- 页面主容器 -->
+    
+    <!-- 左侧：个人简介部分 -->
+    <div class="text1">
+      <img src="https://w.wallhaven.wpcoder.cn/full/7j/wallhaven-7jgyre.jpg" alt="个人头像"> <!-- 头像 -->
+      <ul>
+        <li>姓名：</li> 
+        <li>年龄：100岁</li> 
+        <li>性别：男</li> 
+        <li>个人邮箱：123456@123.com</li> 
+      </ul>
+      <p>签名：高达，屹立于大地之上！</p>
+      <div class="box"> <!-- 链接按钮容器 -->
+        <a href="https://www.bilibili.com" target="_blank">个人B站账户</a> <!-- B站链接 -->
+        <a href="https://www.csdn.net" target="_blank">个人博客账户</a> <!-- 博客链接 -->
+      </div>
+    </div>
+
+    <!-- 右侧：内容展示区 -->
+    <div class="text2">
+      <h1>Hello，欢迎来到我的主页！</h1> 
+      <hr/> <!-- 分隔线 -->
+
+      <!-- 正在学习内容 -->
+      <h2>正在学习：</h2>
+      <p align="center"> <!-- 图标居中 -->
+        <!-- 开源项目链接：https://github.com/tandpfun/skill-icons#readme -->
+        <a href="https://skillicons.dev"> <!-- 技能图标链接,图片来自于github的开源项目，可以免费使用 -->
+          <img src="https://skillicons.dev/icons?i=css,html,js,c" /> <!-- 技能图标展示，名称项目里面有 -->
+        </a>
+        <hr><!--分割线-->
+        <!-- 写自己的个人简介  -->
+        <p>
+          二次元爱好者，热衷崩铁、战双、鸣潮等游戏，沉浸于Fate、电锯人、轻音少女等番剧世界，同时也喜欢看漫画和轻小说，喜欢探索虚拟与幻想的魅力。
+        </p> 
+        <!-- 也是github的开源项目，链接：https://github.com/DenverCoder1/readme-typing-svg -->
+        <a href="https://git.io/typing-svg">
+          <!-- 自定义好后，直接使用 -->
+          <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=900&pause=1000&width=463&height=76&lines=%E4%BD%A0%E6%89%80%E7%83%AD%E7%88%B1%E7%9A%84%E4%BE%BF%E6%98%AF%E4%BD%A0%E7%9A%84%E7%94%9F%E6%B4%BB%EF%BC%81" alt="Typing SVG" />
+        </a>
+      </p>
+      <!-- 视频 -->
+      <div class="video">
+        <!-- 播放自己喜欢的视频 -->
+         <!-- autoplay:自动播放,muted:静音,loop:播放后自动循环,controls:显示播放控制栏 -->
+       <video src="https://media-cdn-zspms.kurogame.com/pnswebsite/website2.0/video/1747756800000/cw1wr1ot9prvpjencq-1747821844788.mp4"
+       autoplay
+       muted
+       loop
+       style="width: 100%;max-height: 500px;border-radius: 12px;object-fit: cover;"
+       ></video>
+       <!-- 宽度100%,最大高度为500px,设置圆角为12px,object-fit:cover :保存视频比例并裁切填满容器 -->
+       </div>
+    </div>
+  </div>
+</body>
+</html>·
