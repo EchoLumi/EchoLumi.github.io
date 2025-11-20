@@ -20,7 +20,7 @@
 		"preinstall": "npx only-allow pnpm",
 		"compress-fonts": "node scripts/compress-fonts.js",
 		"test-font-compression": "node scripts/test-font-compression.js",
-		"deploy": "gh-pages -d dist -b pages"
+		"deploy": "echo '' > dist/.nojekyll && gh-pages -d dist -b pages"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.5",
