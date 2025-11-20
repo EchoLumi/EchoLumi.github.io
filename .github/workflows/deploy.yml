@@ -37,4 +37,4 @@ jobs:
         with:
           branch: pages    # 指定部署到 pages 分支
           folder: dist     # Astro 构建输出目录
-          clean: true      # 清理旧文件
+          clean: true      # 清理目标分支中的旧文件
