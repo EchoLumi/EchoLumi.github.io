@@ -10,7 +10,7 @@
 		"dev": "astro dev",
 		"start": "astro dev",
 		"check": "astro check",
-		"build": "astro build && pagefind --site dist && node scripts/compress-fonts.js",
+		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
 		"type-check": "tsc --noEmit --isolatedDeclarations",
@@ -19,7 +19,8 @@
 		"lint": "biome check --write ./src",
 		"preinstall": "npx only-allow pnpm",
 		"compress-fonts": "node scripts/compress-fonts.js",
-		"test-font-compression": "node scripts/test-font-compression.js"
+		"test-font-compression": "node scripts/test-font-compression.js",
+		"deploy": "gh-pages -d dist -b pages"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.5",
@@ -85,6 +86,7 @@
 		"@types/mdast": "^4.0.4",
 		"@types/sanitize-html": "^2.16.0",
 		"fontmin": "^1.1.1",
+		"gh-pages": "^6.3.0",
 		"postcss-import": "^16.1.1",
 		"postcss-nesting": "^13.0.2"
 	},
