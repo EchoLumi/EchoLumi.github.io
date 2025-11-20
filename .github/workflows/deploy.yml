@@ -1,27 +1,33 @@
 name: Deploy to GitHub Pages
+
 on:
-  # 每次推送到 `main` 分支时触发这个“工作流程”
-  # 如果你使用了别的分支名，请按需将 `main` 替换成你的分支名
   push:
     branches: [ main ]
-  # 允许你在 GitHub 上的 Actions 标签中手动触发此“工作流程”
   workflow_dispatch:
-# 允许 job 克隆 repo 并创建一个 page deployment
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
+      # 1. 拉取代码
+      - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Install, build, and upload your site
+
+      # 2. 使用 Astro 官方 action 构建
+      - name: Install, build, and upload site
         uses: withastro/action@v3
         env:
-          # 使用单引号来包裹变量值
           PUBLIC_EVM_WALLET_ADDRESS: '0x4bFc229A40d41698154336aFF864f61083E76659'
+
+      # 3. 禁用 Jekyll（关键步骤）
+      - name: Disable Jekyll
+        run: echo "" > ./dist/.nojekyll
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -32,3 +38,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          branch: gh-pages       # 或你的 Pages 分支
+          folder: dist           # Astro 默认构建输出目录
+          clean: true
