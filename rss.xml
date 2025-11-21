@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Mizuki</title><description>One demo website</description><link>https://echolumi.github.io/</link><language>en</language><item><title>Markdown Tutorial</title><link>https://echolumi.github.io/posts/markdown-tutorial/</link><guid isPermaLink="true">https://echolumi.github.io/posts/markdown-tutorial/</guid><description>A simple example of a Markdown blog post.</description><pubDate>Mon, 20 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Markdown Tutorial&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>EchoLumi</title><description>Blog</description><link>https://echolumi.github.io/</link><language>en</language><item><title>Markdown Tutorial</title><link>https://echolumi.github.io/posts/markdown-tutorial/</link><guid isPermaLink="true">https://echolumi.github.io/posts/markdown-tutorial/</guid><description>A simple example of a Markdown blog post.</description><pubDate>Mon, 20 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Markdown Tutorial&lt;/h1&gt;
 &lt;p&gt;A markdown example shows how to write a markdown file. This document integrates core syntax and extensions (GMF).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#block-elements&quot;&gt;Block Elements&lt;/a&gt;
@@ -708,6 +708,7 @@ This is another regular paragraph.
 &lt;strong&gt;No Work&lt;/strong&gt;
 &amp;lt;/div&amp;gt;&lt;/p&gt;
 &lt;hr /&gt;
+</content:encoded></item><item><title>我的第一篇文章</title><link>https://echolumi.github.io/posts/one/</link><guid isPermaLink="true">https://echolumi.github.io/posts/one/</guid><description>一篇测试文章</description><pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;这里是内容……&lt;/p&gt;
 </content:encoded></item><item><title>Markdown Extended Features</title><link>https://echolumi.github.io/posts/markdown-extended/</link><guid isPermaLink="true">https://echolumi.github.io/posts/markdown-extended/</guid><description>Read more about Markdown features in Mizuki</description><pubDate>Wed, 01 May 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;GitHub Repository Cards&lt;/h2&gt;
 &lt;p&gt;You can add dynamic cards that link to GitHub repositories, on page load, the repository information is pulled from the GitHub API.&lt;/p&gt;
 &lt;p&gt;::github{repo=&quot;matsuzaka-yuki/Mizuki&quot;}&lt;/p&gt;
@@ -842,6 +843,7 @@ draft: false
 &lt;p&gt;This article demonstrates how to create various complex diagrams using Mermaid in Markdown documents, including flowcharts, sequence diagrams, Gantt charts, class diagrams, and state diagrams.&lt;/p&gt;
 &lt;h2&gt;Flowchart Example&lt;/h2&gt;
 &lt;p&gt;Flowcharts are excellent for representing processes or algorithm steps.&lt;/p&gt;
+&lt;h2&gt;测试用例&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;graph TD
     A[Start] --&amp;gt; B{Condition Check}
     B --&amp;gt;|Yes| C[Process Step 1]

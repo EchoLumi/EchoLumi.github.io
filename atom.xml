@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Mizuki</title>
-  <subtitle>One demo website</subtitle>
+  <title>EchoLumi</title>
+  <subtitle>Blog</subtitle>
   <link href="https://echolumi.github.io/" rel="alternate" type="text/html"/>
   <link href="https://echolumi.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <id>https://echolumi.github.io/</id>
-  <updated>2025-11-20T01:39:57.460Z</updated>
+  <updated>2025-11-21T05:53:34.795Z</updated>
   <language>en</language>
   <entry>
     <title>Markdown Tutorial</title>
@@ -726,9 +726,22 @@ This is another regular paragraph.
 <hr />
 ]]></content>
     <author>
-      <name>Matsuzaka Yuki</name>
+      <name>EchoLumi</name>
     </author>
     <category term="Examples"></category>
+  </entry>
+  <entry>
+    <title>我的第一篇文章</title>
+    <link href="https://echolumi.github.io/posts/one/" rel="alternate" type="text/html"/>
+    <id>https://echolumi.github.io/posts/one/</id>
+    <published>2025-01-01T00:00:00.000Z</published>
+    <updated>2025-01-01T00:00:00.000Z</updated>
+    <summary>一篇测试文章</summary>
+    <content type="html"><![CDATA[<p>这里是内容……</p>
+]]></content>
+    <author>
+      <name>EchoLumi</name>
+    </author>
   </entry>
   <entry>
     <title>Markdown Extended Features</title>
@@ -795,7 +808,7 @@ This is a note with a custom title.
 <pre><code>The content :spoiler[is hidden **ayyy**]!</code></pre>
 ]]></content>
     <author>
-      <name>Matsuzaka Yuki</name>
+      <name>EchoLumi</name>
     </author>
     <category term="Examples"></category>
   </entry>
@@ -882,7 +895,7 @@ draft: false
 </code></pre>
 ]]></content>
     <author>
-      <name>Matsuzaka Yuki</name>
+      <name>EchoLumi</name>
     </author>
     <category term="Guides"></category>
   </entry>
@@ -897,6 +910,7 @@ draft: false
 <p>This article demonstrates how to create various complex diagrams using Mermaid in Markdown documents, including flowcharts, sequence diagrams, Gantt charts, class diagrams, and state diagrams.</p>
 <h2>Flowchart Example</h2>
 <p>Flowcharts are excellent for representing processes or algorithm steps.</p>
+<h2>测试用例</h2>
 <pre><code>graph TD
     A[Start] --&gt; B{Condition Check}
     B --&gt;|Yes| C[Process Step 1]
@@ -1046,7 +1060,7 @@ draft: false
 <p>Try using Mermaid diagrams in your next technical blog post or project documentation - they will make your content more professional and easier to understand!</p>
 ]]></content>
     <author>
-      <name>Matsuzaka Yuki</name>
+      <name>EchoLumi</name>
     </author>
     <category term="Examples"></category>
   </entry>
@@ -1072,7 +1086,7 @@ published: 2023-10-19
 <p>&lt;iframe width="100%" height="468" src="//player.bilibili.com/player.html?bvid=BV1fK4y1s7Qf&amp;p=1&amp;autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" &amp;autoplay=0&gt; &lt;/iframe&gt;</p>
 ]]></content>
     <author>
-      <name>Matsuzaka Yuki</name>
+      <name>EchoLumi</name>
     </author>
     <category term="Examples"></category>
   </entry>
