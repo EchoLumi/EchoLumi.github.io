@@ -5,7 +5,7 @@
   <link href="https://echolumi.github.io/" rel="alternate" type="text/html"/>
   <link href="https://echolumi.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <id>https://echolumi.github.io/</id>
-  <updated>2025-11-21T05:53:34.795Z</updated>
+  <updated>2025-11-21T06:08:31.543Z</updated>
   <language>en</language>
   <entry>
     <title>Markdown Tutorial</title>
@@ -731,17 +731,18 @@ This is another regular paragraph.
     <category term="Examples"></category>
   </entry>
   <entry>
-    <title>我的第一篇文章</title>
-    <link href="https://echolumi.github.io/posts/one/" rel="alternate" type="text/html"/>
-    <id>https://echolumi.github.io/posts/one/</id>
-    <published>2025-01-01T00:00:00.000Z</published>
-    <updated>2025-01-01T00:00:00.000Z</updated>
-    <summary>一篇测试文章</summary>
-    <content type="html"><![CDATA[<p>这里是内容……</p>
+    <title>测试界面</title>
+    <link href="https://echolumi.github.io/posts/fristdemo/" rel="alternate" type="text/html"/>
+    <id>https://echolumi.github.io/posts/fristdemo/</id>
+    <published>2025-11-21T00:00:00.000Z</published>
+    <updated>2025-11-21T00:00:00.000Z</updated>
+    <summary>This is the first post of my new Astro blog.</summary>
+    <content type="html"><![CDATA[<h2>这个我的第一篇Blog</h2>
 ]]></content>
     <author>
       <name>EchoLumi</name>
     </author>
+    <category term="Front-end"></category>
   </entry>
   <entry>
     <title>Markdown Extended Features</title>

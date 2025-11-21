@@ -708,7 +708,7 @@ This is another regular paragraph.
 &lt;strong&gt;No Work&lt;/strong&gt;
 &amp;lt;/div&amp;gt;&lt;/p&gt;
 &lt;hr /&gt;
-</content:encoded></item><item><title>我的第一篇文章</title><link>https://echolumi.github.io/posts/one/</link><guid isPermaLink="true">https://echolumi.github.io/posts/one/</guid><description>一篇测试文章</description><pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;这里是内容……&lt;/p&gt;
+</content:encoded></item><item><title>测试界面</title><link>https://echolumi.github.io/posts/fristdemo/</link><guid isPermaLink="true">https://echolumi.github.io/posts/fristdemo/</guid><description>This is the first post of my new Astro blog.</description><pubDate>Fri, 21 Nov 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;这个我的第一篇Blog&lt;/h2&gt;
 </content:encoded></item><item><title>Markdown Extended Features</title><link>https://echolumi.github.io/posts/markdown-extended/</link><guid isPermaLink="true">https://echolumi.github.io/posts/markdown-extended/</guid><description>Read more about Markdown features in Mizuki</description><pubDate>Wed, 01 May 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;GitHub Repository Cards&lt;/h2&gt;
 &lt;p&gt;You can add dynamic cards that link to GitHub repositories, on page load, the repository information is pulled from the GitHub API.&lt;/p&gt;
 &lt;p&gt;::github{repo=&quot;matsuzaka-yuki/Mizuki&quot;}&lt;/p&gt;
